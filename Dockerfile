@@ -33,6 +33,8 @@ CMD     ["/usr/sbin/httpd","-D","FOREGROUND"]
 # Then copy file index.html from the host to 
 # /var/www/html/ on the container.
 COPY    index.html /var/www/html/
+COPY    Jumbotron.jpg /var/www/html/
+COPY    OpenSource.png /var/www/html/
 
 # 6)
 # If everything went fine then docker
